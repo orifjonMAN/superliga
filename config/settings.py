@@ -165,10 +165,10 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
 STATIC_URL = '/static/'
-if not DEBUG:
+if DEBUG:
     STATICFILES_DIRS = [BASE_DIR / 'static']
 else:
-    STATIC_ROOT = (BASE_DIR / 'staticfiles')
+    STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 
 # AUTH_USER_MODEL = 'accounts.CustomUser'
