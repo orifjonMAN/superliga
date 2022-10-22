@@ -161,15 +161,14 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-MEDIA_URL = 'media/'
+MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
-STATIC_URL = 'static/'
-STATICFILES_DIRS = [BASE_DIR / 'static']
+STATIC_URL = '/static/'
 if DEBUG:
-    STATIC_ROOT = (BASE_DIR / '/staticfiles')
+    STATICFILES_DIRS = [BASE_DIR / 'static']
 else:
-    STATIC_ROOT = (BASE_DIR / 'staticfiles')
+    STATIC_ROOT = (BASE_DIR / 'static')
 
 
 # AUTH_USER_MODEL = 'accounts.CustomUser'
