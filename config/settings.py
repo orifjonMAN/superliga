@@ -168,7 +168,7 @@ STATIC_URL = '/static/'
 if DEBUG:
     STATICFILES_DIRS = [BASE_DIR / 'static']
 else:
-    STATIC_ROOT = 'staticfiles'
+    STATIC_ROOT = 'static'
 
 
 # AUTH_USER_MODEL = 'accounts.CustomUser'
