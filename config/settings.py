@@ -33,7 +33,7 @@ SECRET_KEY = env('SECRET_KEY')
 DEBUG = env('DEBUG')
 
 ALLOWED_HOSTS = ['https://liganews.uz/', '127.0.0.1']
-CSRF_TRUSTED_ORIGINS = ['https://liganews.uz/']
+CSRF_TRUSTED_ORIGINS = ['https://liganews.uz/', 'https://www.liganews.uz/']
 
 
 # Application definition
