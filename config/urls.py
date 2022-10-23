@@ -49,6 +49,6 @@ urlpatterns = [
         'swagger', cache_timeout=0), name='swagger-schema-ui'),
     path('redoc/', schema_view.with_ui(
         'redoc', cache_timeout=0), name='redoc-schema-ui'),
-]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
