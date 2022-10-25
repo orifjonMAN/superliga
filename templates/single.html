@@ -144,7 +144,7 @@
                         {% if new.reviews.exists %}
                         {% for review in new.reviews.all %}
                         <div class="media">
-                            <img src="{% static 'img/user_picture.png' %}" alt="Image" class="img-fluid mr-3 mt-1" style="width: 45px;">
+                            <img src="" alt="Image" class="img-fluid mr-3 mt-1" style="width: 45px;">
                             <div class="media-body">
                                 <h6><a href="">{{review.user.first_name}} {{review.user.last_name}}</a> <small><i>{{review.created}}</i></small>
                                     <a>
